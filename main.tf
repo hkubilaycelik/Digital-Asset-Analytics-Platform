@@ -1,5 +1,6 @@
 # Configures the AWS provider to use the us-east-1 region
 provider "aws" {
+    
   region = "us-east-1"
 }
 

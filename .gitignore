@@ -9,3 +9,6 @@ terraform.tfstate.backup
 # Common OS-specific files
 .DS_Store
 Thumbs.db
+
+.Data/
+BTCUSDT-trades-2025-05.csv

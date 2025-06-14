@@ -58,8 +58,8 @@ The current architecture covers the ingestion and processing stages of the pipel
 <pre>
 ```
 ├── notebooks/
-│   ├── raw-data-processor.ipynb  # The main Databricks notebook with outputs.
-│   └── raw-data-processor.py     # The exported Python source code from the notebook.
+│   ├── digital-asset-analytics-platform_raw-data-processor.ipynb # The main Databricks notebook with outputs.
+│   └── digital-asset-analytics-platform_raw-data-processor.py     # The exported Python source code from the notebook.
 ├── terraform/
 │   └── main.tf                   # Terraform code to create the S3 bucket.
 ├── ingestion.py                  # Python script to upload raw data to S3.

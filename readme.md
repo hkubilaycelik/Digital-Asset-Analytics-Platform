@@ -55,6 +55,8 @@ The current architecture covers the ingestion and processing stages of the pipel
 
 ### 5. Repository Structure
 
+<pre>
+```
 ├── notebooks/
 │   ├── raw-data-processor.ipynb  # The main Databricks notebook with outputs.
 │   └── raw-data-processor.py     # The exported Python source code from the notebook.
@@ -63,4 +65,5 @@ The current architecture covers the ingestion and processing stages of the pipel
 ├── ingestion.py                  # Python script to upload raw data to S3.
 ├── .gitignore                    # Specifies files for Git to ignore.
 └── README.md                     # This file.
-
+```
+</pre>

@@ -67,3 +67,16 @@ The current architecture covers the ingestion and processing stages of the pipel
 └── README.md                     # This file.
 ```
 </pre>
+
+
+
+
+## 6. Setup and Installation
+
+*(To be completed)*
+
+
+
+## 7. Pipeline Execution
+
+*(To be completed)*

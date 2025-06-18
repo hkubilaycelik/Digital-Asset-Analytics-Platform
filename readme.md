@@ -1,5 +1,12 @@
 Digital Asset Analytics Platform
 
+# Digital Asset Analytics Platform
+
+![Digital Asset Dashboard](/Users/hkubilayc/Documents/GitHub/Digital-Asset-Analytics-Platform/metabase_image_sample/metabase_dasbord_test.png)
+*(This is the final metabase BI dashboard sample built on the processed data)*
+
+
+
 1. Project Objective
 
 This project is an end-to-end data engineering pipeline designed to handle high-frequency cryptocurrency data. The system architecture is built to be scalable for any digital asset, and this specific implementation processes approximately 9 GB dataset of raw BTCUSDT trades of may 2025 to demonstrate its capabilities. The goal is to transform this massive raw dataset into clean, aggregated, and valuable analytical models ready for business intelligence.
@@ -156,11 +163,4 @@ The architecture represents a complete, automated ELT pipeline orchestrated by A
 └── README.md                     # This file
 ```
 </pre>
-
-
-
-
-## 6. Setup and Installation
-
-*(To be completed)*
 

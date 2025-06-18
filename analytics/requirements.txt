@@ -1,0 +1,6 @@
+dbt-core
+dbt-snowflake
+operator_args = {
+    "image": "ghcr.io/dbt-labs/dbt-snowflake:1.6.6",
+    "entrypoint": "bash -c 'pip install -r /usr/local/airflow/analytics/requirements.txt && dbt run'"
+}

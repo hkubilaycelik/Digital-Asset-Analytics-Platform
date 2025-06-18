@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: snowflake_raw_data 
+    database: DIGITAL_ASSET_ANALYTICS_PLATFORM_DB
+    schema: PUBLIC
+    tables:
+      - name: RAW_CANDLES

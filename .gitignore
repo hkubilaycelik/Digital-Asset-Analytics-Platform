@@ -1,0 +1,14 @@
+# Terraform state and provider files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore any files with a .tfvars extension, as they can contain secrets
+*.tfvars
+
+# Common OS-specific files
+.DS_Store
+Thumbs.db
+
+.Data/
+BTCUSDT-trades-2025-05.csv

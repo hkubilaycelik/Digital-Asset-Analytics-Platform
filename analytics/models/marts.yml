@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_candle_metrics
+    description: "Final analytics table with 1-minute OHLCV data and calculated metrics for BTCUSDT."
+    columns:
+      - name: candle_start_time
+        description: "The unique timestamp for the start of the 1-minute candle. This is the primary key."
+        tests:
+          - unique
+          - not_null
+
+      - name: close_price
+        description: "The closing price for the 1-minute candle."
+        tests:
+          - not_null
+
+      - name: trading_volume
+        description: "The total volume traded during the 1-minute candle."
+        tests:
+          - not_null

@@ -2,7 +2,7 @@ Digital Asset Analytics Platform
 
 # Digital Asset Analytics Platform
 
-![Digital Asset Dashboard](/Users/hkubilayc/Documents/GitHub/Digital-Asset-Analytics-Platform/metabase_image_sample/metabase_dasbord_test.png)
+![Digital Asset Dashboard](metabase_image_sample/metabase_dasbord_test.png)
 *(This is the final metabase BI dashboard sample built on the processed data)*
 
 

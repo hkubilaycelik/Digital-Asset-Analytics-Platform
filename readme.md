@@ -89,25 +89,36 @@ Itepresents a complete, automated ELT pipeline orchestrated by Apache Airflow.
 
 The architecture represents a complete, automated ELT pipeline orchestrated by Apache Airflow.
 
-+---------------------------------+
-|   Apache Airflow (DAG)          |
-| (Orchestrator)                  |
-+---------------------------------+
-|
-| 1. Triggers Databricks Job
-V
-+---------------------------------+
-|   Databricks (PySpark)          |-----> Reads from S3 (raw)
-|   (Process Raw Data)        |
-|                                 |<----- Writes to S3 (processed)
-+---------------------------------+
-|
-| 2. Triggers dbt Cloud Commands
-V
-+---------------------------------+
-|   dbt Core                      |
-|   (Models & Tests data in DW)   |-----> Reads from/Writes to Snowflake
-+---------------------------------+
+<pre>
+```text
+                 +------------------------------+
+                 |     Apache Airflow (DAG)     |
+                 |         (Orchestrator)       |
+                 +--------------+---------------+
+                                |
+                   Triggers Databricks Job
+                                |
+                                V
+                 +------------------------------+
+                 |     Databricks (PySpark)     |
+                 |     (Process Raw Data)       |
+                 +--------------+---------------+
+                                |
+       Reads from S3 (raw) <----+----> Writes to S3 (processed)
+                                |
+                                V
+                   Triggers dbt Core Commands
+                                |
+                                V
+                 +------------------------------+
+                 |          dbt Core            |
+                 | (Models & Tests data in DW)  |
+                 +--------------+---------------+
+                                |
+     Reads from/Writes to Snowflake Data Warehouse
+```
+</pre>
+
 
 
 

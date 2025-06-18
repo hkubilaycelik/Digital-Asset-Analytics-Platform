@@ -90,7 +90,7 @@ Itepresents a complete, automated ELT pipeline orchestrated by Apache Airflow.
 The architecture represents a complete, automated ELT pipeline orchestrated by Apache Airflow.
 
 <pre>
-```text
+```
                  +------------------------------+
                  |     Apache Airflow (DAG)     |
                  |         (Orchestrator)       |

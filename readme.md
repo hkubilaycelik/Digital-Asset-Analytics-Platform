@@ -7,7 +7,7 @@ Digital Asset Analytics Platform
 
 
 
-1. Project Objective
+### 1. Project Objective
 
 This project is an end-to-end data engineering pipeline designed to handle high-frequency cryptocurrency data. The system architecture is built to be scalable for any digital asset, and this specific implementation processes approximately 9 GB dataset of raw BTCUSDT trades of may 2025 to demonstrate its capabilities. The goal is to transform this massive raw dataset into clean, aggregated, and valuable analytical models ready for business intelligence.
 
@@ -52,9 +52,9 @@ This portfolio piece demonstrates skills in cloud infrastructure management, lar
 | **Data Processing** | Databricks, Apache Spark   | Large-scale transformation of the raw data.       |
 | **Data Warehouse**| Snowflake                  |  Storing structured data for BI.      |
 | **Data Modeling** | dbt                        |  Transforming data within the warehouse.|
-| **Orchestration** | Apache Airflow             | *(Upcoming)* Automating and scheduling the pipeline.|
+| **Orchestration** | Apache Airflow             |  Automating and scheduling the pipeline.|
 | **Containerization**| Docker                     | Running Airflow in a consistent environment.      |
-| **Visualization** | Metabase                   | *(Upcoming)* Building BI dashboards.              |
+| **Visualization** | Metabase                   |  Building BI dashboards.              |
 | **Data Formats** | CSV, Parquet               | I/O formats for raw and processed data.           |
 
 
@@ -65,34 +65,6 @@ The architecture covers the full ELT (Extract, Load, Transform) process, from ra
 Itepresents a complete, automated ELT pipeline orchestrated by Apache Airflow.
 [Local CSV] -> [Python] -> [S3 Raw Zone] -> [Databricks/Spark] -> [S3 Processed Zone] -> [Snowflake Stage] -> [COPY INTO] -> [Snowflake Raw Table] -> [dbt] -> [Snowflake Final Marts]
 
-
-### 2. Project Status
-
-* [x] **Phase 1: Foundation & Ingestion**
-    * [x] Infrastructure (S3 Data Lake) provisioned using Terraform.
-    * [x] Ingestion script created in Python with Boto3.
-    * [x] 9 GB of raw BTC trade data successfully uploaded to the S3 `raw/` layer.
-* [x] **Phase 2: Data Processing & Transformation**
-    * [x] Databricks environment configured and connected to the AWS account.
-    * [x] Raw trade data read and processed using a Databricks Notebook with PySpark.
-    * [x] Data aggregated from individual trades into 1-minute OHLCV candles.
-    * [x] Processed data successfully saved to the S3 `processed/` layer in Parquet format.
-* [x] **Phase 3: Warehousing & Modeling**
-    * [x] Snowflake environment configured (Warehouse, Database, Roles).
-    * [x] Secure connection between Snowflake and S3 created via a Storage Integration.
-    * [x] Processed Parquet data from S3 loaded into a raw Snowflake table.
-    * [x] dbt project initialized and connected to Snowflake.
-    * [x] Data models (staging and marts) built to clean data and add business logic.
-    * [x] Data quality tests added and passed to ensure model integrity.
-* [x] **Phase 4: Orchestration & Automation**
-    * [x] Local Airflow environment configured using official Docker Compose.
-    * [x] Connections to Databricks and Snowflake created and verified.
-    * [x] A complete DAG written to orchestrate the entire pipeline from Databricks processing to dbt tests.
-    * [x] Full end-to-end pipeline successfully executed via the Airflow DAG.
-* [ ] **Phase 5: Visualization**
-    * *(Next)* Connect Metabase to Snowflake to create an analytical dashboard.
-
-### 4. Data Pipeline Architecture
 
 The architecture represents a complete, automated ELT pipeline orchestrated by Apache Airflow.
 

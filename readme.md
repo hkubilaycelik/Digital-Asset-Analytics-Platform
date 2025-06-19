@@ -38,8 +38,8 @@ This portfolio piece demonstrates skills in cloud infrastructure management, lar
     * [x] Connections to Databricks and Snowflake created and verified.
     * [x] A complete DAG written to orchestrate the entire pipeline from Databricks processing to dbt tests.
     * [x] Full end-to-end pipeline successfully executed via the Airflow DAG.
-* [ ] **Phase 5: Visualization**
-    * *(Upcoming)* Connect Metabase to Snowflake to create analytical dashboards.
+* [x] **Phase 5: Visualization**
+    * [x] Connect Metabase to Snowflake to create analytical dashboards.
 
 
 ### 3. Tech Stack
